@@ -233,7 +233,26 @@
         </defs>
       </svg>
       <h1>Hello, {{ title() }}</h1>
+
+<h2>My Heroes</h2>
+
+<ul>
+  @for (hero of heroes; track hero.id) {
+    <li (click)="selectHero(hero)">
+      {{ hero.id }} - {{ hero.name }}
+    </li>
+  }
+</ul>
+
+@if (selectedHero) {
+  <h3>Selected Hero</h3>
+  <p>ID: {{ selectedHero.id }}</p>
+  <p>Name: {{ selectedHero.name }}</p>
+}
       <p>Congratulations! Your app is running. 🎉</p>
+      <p>Without spaces: {{ 'Hello Angular Lab 08' | removeSpaces }}</p>
+      <h3>Input Format Directive</h3>
+<input type="text" appInputFormat placeholder="Type something here">
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
