@@ -1,0 +1,22 @@
+<div class="page">
+  <div class="header-card">
+    <h1>{{ title }}</h1>
+    <p class="subtitle">This demo shows how Angular environment files switch values for TEST, UAT, and PROD.</p>
+  </div>
+
+  <div class="status-card" [style.border-top-color]="environment.color">
+    <div class="badge" [style.backgroundColor]="environment.color">{{ environment.envName }}</div>
+    <h2>Current Environment: {{ environment.envName }}</h2>
+    <p><strong>API URL:</strong> {{ environment.apiUrl }}</p>
+    <p><strong>Message:</strong> {{ environment.message }}</p>
+    <p><strong>Production Mode:</strong> {{ environment.production ? 'Yes' : 'No' }}</p>
+  </div>
+
+  <div class="grid">
+    <div class="info-card" *ngFor="let item of environments">
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <code>{{ item.command }}</code>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.page {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+.header-card,
+.status-card,
+.info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.header-card {
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.header-card h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4b5563;
+}
+
+.status-card {
+  padding: 28px;
+  margin-bottom: 24px;
+  border-top: 8px solid #2563eb;
+}
+
+.badge {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  padding: 8px 14px;
+  margin-bottom: 16px;
+}
+
+.status-card h2 {
+  margin: 0 0 12px;
+}
+
+.status-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  padding: 22px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+}
+
+.info-card p {
+  min-height: 72px;
+  color: #4b5563;
+}
+
+code {
+  display: inline-block;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
